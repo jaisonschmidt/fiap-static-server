@@ -1,3 +1,8 @@
+/**
+ * O Express.js é um framework web minimalista e flexível para Node.js, 
+ * usado para criar servidores HTTP e APIs de forma simples e estruturada.
+ */
+
 const express = require('express');
 const path = require('path');
 const app = express();
@@ -6,12 +11,10 @@ const directory = path.join(__dirname, 'public'); // gera o caminho completo do 
 
 app.use(express.static(directory)); // define o diretório de arquivos estáticos
 
-app.get('/health-check', (req, res) => {
+app.get('/health', (req, res) => {
     res.send('OK');
 });
 
-// arrow function e function normal
-// arrow function difere quanto ao objeto this
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
 }); 
