@@ -1,0 +1,1 @@
+import{u as p,p as c,c as a,a as s,o as r,b as o,t as l}from"./index-DZFjo-jF.js";const i={key:0},_={key:1},f={__name:"Post",setup(d){const u=p(),t=c.find(e=>e.slug===u.params.slug);return(e,n)=>s(t)?(r(),a("div",i,[o("h1",null,l(s(t).title),1),o("p",null,l(s(t).content),1)])):(r(),a("div",_,n[0]||(n[0]=[o("p",null,"Post não encontrado.",-1)])))}};export{f as default};

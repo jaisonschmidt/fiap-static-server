@@ -11,6 +11,7 @@ const directory = path.join(__dirname, 'public'); // gera o caminho completo do 
 
 app.use(express.static(directory)); // define o diretório de arquivos estáticos
 
+// muito usada para demonstrar que um serviço está up e running
 app.get('/health', (req, res) => {
     res.send('OK');
 });
