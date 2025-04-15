@@ -13,7 +13,7 @@ app.use(express.static(directory)); // define o diretório de arquivos estático
 
 // muito usada para demonstrar que um serviço está up e running
 app.get('/health', (req, res) => {
-    res.send('OK');
+    res.send('OKKK!');
 });
 
 app.listen(3000, () => {
